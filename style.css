@@ -151,9 +151,6 @@ nav {
 }
 
 article {
-  z-index: 1;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
   padding: 1em;
   margin: 0 1em;
 }
@@ -164,7 +161,6 @@ section {
 
 /* DESKTOP */
 @media only screen and (min-width: 900px) {
-
   .bdh--details {
     text-decoration: none;
     text-transform: capitalize;
