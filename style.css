@@ -74,21 +74,18 @@ body, html {
 }
 
 .bdh--item > a {
-  font-size: 1.5em;
   text-decoration: none;
 }
 
 .bdh--details {
+  font-size: .9em;
   display: block;
   text-decoration: none;
   color: rgb(16, 61, 16);
   text-transform: capitalize;
 }
 
-.bdh--title {
-  font-size: 2em;
-  margin: 0;
-}
+/* .bdh--title {} */
 
 .bdh--introduction-wrapper {
   display: flex;
@@ -106,18 +103,14 @@ body, html {
   height: 18em;
 }
 
-h1 {
-  line-height: 1.8em;
-}
-
-h2 {
+h1, h2 {
   font-size: 1em;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 2em;
 }
 
