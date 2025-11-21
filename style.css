@@ -14,6 +14,10 @@ body, html {
   font-size: 16px;
 }
 
+.bdh--intro {
+    /* background: url("./images/grayscaled.png"); */
+}
+
 .bdh--intro-inner {
   text-align: center;
 }
@@ -30,19 +34,10 @@ body, html {
   text-decoration: none;
   padding: 1em;
   display: block;
-  margin: 1em 0;
-
-  &:hover {
-    background-color: #FF5722;
-    text-decoration: none;
-  }  
+  margin: 1em 0; 
 }
 
 .bdh--lab {
-  /* background-image: url(./images/candelabra-hero.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
-
   .bdh--web-links {
     border: solid black 1px;
 
@@ -56,12 +51,23 @@ body, html {
   display: grid;
   column-gap: 1em;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
   .grid-item {
     height: 80%;
   }
 }
+
+.bdh--va-desc-grid {
+    display: grid;
+    column-gap: 1em;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+    .grid-item {
+      height: 80%;
+    }
+  }
 
 .bdh--projects-section li {
   border-bottom: 1px solid rgb(16, 61, 16);
@@ -85,22 +91,37 @@ body, html {
   text-transform: capitalize;
 }
 
-/* .bdh--title {} */
-
 .bdh--introduction-wrapper {
+  /* display: flex; */
+}
+
+.bdh--side-by-side {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .bdh--goat {
-  background-image: url('./images/friendOfGoats.png');
+  background-image: url('../images/bdh_serious_face.jpeg');
   background-repeat: no-repeat;
   background-size: auto;
   background-size: cover;
   background-position-y: 0em;
   background-position-x: 0em;
-  border-radius: 1em;
+  border-radius: .5em;
   width: 12em;
-  height: 18em;
+  height: 11em;
+}
+
+.heavy-brown {
+    color: #8a1100;
+}
+
+.heavy-blue {
+    color: #0075c0;
+}
+
+.bumper > a > img {
+    width: 100%;
 }
 
 h1, h2 {
@@ -163,9 +184,10 @@ section {
   }
 
   .bdh--title {
-    font-size: 4em;
+    font-size: 2em;
     margin: 0;
   }
+
 
   .bdh--item > a {
     /* width: 100%; */
