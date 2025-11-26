@@ -14,8 +14,32 @@ body, html {
   font-size: 16px;
 }
 
-.bdh--intro {
-    /* background: url("./images/grayscaled.png"); */
+.portraitMe {
+    background: url("./images/mecctv.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75px;
+    height: 100px;
+    display: block;
+    /* padding: 1rem; */
+}
+
+.portraitMe:hover {
+    background: url("./images/mecctvhover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75px;
+    height: 100px;
+    display: block;
+}
+
+.bdh--block {
+    background: url("./images/splash_image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bdh--intro-inner {
@@ -28,6 +52,7 @@ body, html {
 }
 
 .bdh--web-links {
+    background-color: #f5f5f5;
   border: solid black 1px;
   border-radius: 1em;
   text-align: center;
