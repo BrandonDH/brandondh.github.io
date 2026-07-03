@@ -10,27 +10,26 @@ body, html {
 
 /* MOBILE */
 .bdh--brandon-body {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
 }
 
 .portraitMe {
     background: url("./images/mecctv.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 75px;
+    background-size: fit;
+    width: 100px;
     height: 100px;
     display: block;
-    /* padding: 1rem; */
 }
 
 .portraitMe:hover {
     background: url("./images/mecctvhover.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 75px;
+    background-size: fit;
+    width: 100px;
     height: 100px;
     display: block;
 }
@@ -53,34 +52,34 @@ body, html {
 
 .bdh--web-links {
     background-color: #f5f5f5;
-  border: solid black 1px;
-  border-radius: 1em;
-  text-align: center;
-  text-decoration: none;
-  padding: 1em;
-  display: block;
-  margin: 1em 0; 
+    border: solid black 1px;
+    border-radius: 1em;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    margin: 1em 0; 
 }
 
 .bdh--lab {
-  .bdh--web-links {
-    border: solid black 1px;
+    .bdh--web-links {
+        border: solid black 1px;
 
-    &:hover {
-      background-color: rgb(34, 162, 83);
+        &:hover {
+            background-color: rgb(34, 162, 83);
+        }
     }
-  }
 }
 
 .bdh--web-links-grid {
-  display: grid;
-  column-gap: 1em;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: grid;
+    column-gap: 1em;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
-  .grid-item {
-    height: 80%;
-  }
+    .grid-item {
+        height: 80%;
+    }
 }
 
 .bdh--va-desc-grid {
@@ -92,49 +91,45 @@ body, html {
     .grid-item {
       height: 80%;
     }
-  }
+}
 
 .bdh--projects-section li {
-  border-bottom: 1px solid rgb(16, 61, 16);
+    border-bottom: 1px solid red;
 }
 
 .bdh--projects-section a {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.5em 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em 0 0;
 }
 
 .bdh--item > a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .bdh--details {
-  font-size: .9em;
-  display: block;
-  text-decoration: none;
-  color: rgb(16, 61, 16);
-  text-transform: capitalize;
-}
-
-.bdh--introduction-wrapper {
-  /* display: flex; */
+    font-size: .9em;
+    display: block;
+    text-decoration: none;
+    color: rgb(16, 61, 16);
+    text-transform: capitalize;
 }
 
 .bdh--side-by-side {
-  display: flex;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .bdh--goat {
-  background-image: url('../images/bdh_serious_face.jpeg');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-size: cover;
-  background-position-y: 0em;
-  background-position-x: 0em;
-  border-radius: .5em;
-  width: 12em;
-  height: 11em;
+    background-image: url('../images/bdh_serious_face.jpeg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: cover;
+    background-position-y: 0em;
+    background-position-x: 0em;
+    border-radius: .5em;
+    width: 12em;
+    height: 11em;
 }
 
 .heavy-brown {
@@ -165,6 +160,7 @@ a {
 
   &:hover {
     color: black;
+    text-decoration: underline;
   }
 
   &:visited {
@@ -180,10 +176,6 @@ li {
   list-style: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 nav {
   text-align: center;
   padding: 1em 0;
@@ -191,47 +183,129 @@ nav {
 
 article {
   padding: 1em;
-  margin: 0 1em;
+    /* border-right: 1px solid red; */
 }
 
-section {
-  z-index: 1;
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+  .bdh--details {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+  }
 }
 
 /* DESKTOP */
 @media only screen and (min-width: 900px) {
-  .bdh--details {
-    text-decoration: none;
-    text-transform: capitalize;
-    position: absolute;
-    font-size: 1em;
-    right: 2em;
-  }
+    .bdh--details {
+        text-decoration: none;
+        text-transform: capitalize;
+        position: absolute;
+        font-size: 1em;
+        right: 2em;
+    }
 
-  .bdh--title {
-    font-size: 2em;
-    margin: 0;
-  }
+    .bdh--title {
+        font-size: 4em;
+        margin: 0;
+        text-transform: capitalize;
+    }
 
+    .bdh--projects-section.mini > ul > li.bdh--item > span.bdh--details {
+        width: 15%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
 
-  .bdh--item > a {
-    /* width: 100%; */
-    margin: .5em 0;
-  }
+    .bdh--item > a {
+        margin: .5em 0;
+    }
 
-  .bdh--item > span.bdh--pd {
-    font-size: 1em;
-  }
+    .bdh--item > span.bdh--pd {
+        font-size: 1em;
+    }
 
-  .bdh--item {
+    .big-header-two {
+        font-size: 1.5em;
+        line-height: 1.2em;  
+    }
+
+    .bdh--item {
+        display: flex;
+
+        &:hover {
+            &::after {
+                opacity: 1;
+                transition: opacity 1s .2s ease-out;
+            }
+        }
+    }
+
+    /* jumbo tron */
+    .big-tron--pane {
+        flex: 1;
+        background-color: #f5f5f5;
+    }
+
+    .expounder {
+        font-size: 2rem
+    }
+    
+    .big-poster {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* grid */
+.brandon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+.grid-column-half {
+    grid-column: span 2;
+}
+
+.grid-column-third {
+    grid-column: span 1;
+}
+
+.candelabra {
+    background-image: url('./images/results.png');
+}
+.meTalking {
+    background-image: url('./images/me-giving-a-talk.png');
+}
+
+.meLooking {
+    background-image: url('./images/me-looking.jpg');
+}
+
+.planview {
+    background-image: url('./images/planview.png');
+}
+
+.mobileMockup {
+    background-image: url('./images/beachMobile.jpg');
+}
+
+.util-inline {
     display: flex;
     align-items: center;
+    gap: 1em;
+}
 
-    &:hover {
-      &::after {
-        opacity: 1;
-        transition: opacity 1s .2s ease-out;
-      }
-    }
-  }
+.expounder {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0 1em;
 }
