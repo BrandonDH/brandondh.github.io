@@ -112,7 +112,6 @@ body, html {
     display: block;
     text-decoration: none;
     color: rgb(16, 61, 16);
-    text-transform: capitalize;
 }
 
 .bdh--side-by-side {
@@ -144,7 +143,7 @@ body, html {
     width: 100%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-size: 1em;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -200,7 +199,6 @@ article {
 @media only screen and (min-width: 900px) {
     .bdh--details {
         text-decoration: none;
-        text-transform: capitalize;
         position: absolute;
         font-size: 1em;
         right: 2em;
@@ -299,4 +297,143 @@ article {
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 0 1em;
+}
+
+.poster-subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0 1em;
+    color: rgb(112, 112, 112);
+}
+
+.dark-block {
+    background-color: rgb(24, 18, 43);
+    color: white;
+    padding: 2em 0;
+}
+
+.dark-block a {
+    color: rgb(255, 224, 121);
+    text-decoration: none;
+}
+
+.dark-block .grid-item p {
+    color: rgb(214, 210, 226);
+}
+
+/* EDITORIAL PASS — hero, CTAs, case study, studio, contact */
+
+.bdh--title {
+    font-size: 2.5em;
+    margin: .2em 0 .3em;
+    text-transform: capitalize;
+}
+
+.bdh--eyebrow {
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: #8a1100;
+    margin-bottom: 0;
+}
+
+.bdh--cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 1.5em 0 .5em;
+}
+
+.bdh--cta {
+    display: inline-block;
+    padding: .6em 1.4em;
+    background-color: #191919;
+    color: #f5f5f5;
+    border: 1px solid #191919;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .85em;
+    letter-spacing: .06em;
+}
+
+.bdh--cta:hover,
+.bdh--cta:visited:hover {
+    background-color: #8a1100;
+    border-color: #8a1100;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.bdh--cta:visited {
+    color: #f5f5f5;
+}
+
+.bdh--cta-secondary {
+    background-color: transparent;
+    color: #191919;
+    border: 1px solid #191919;
+}
+
+.bdh--cta-secondary:visited {
+    color: #191919;
+}
+
+.bdh--availability {
+    font-size: .9em;
+    color: rgb(16, 61, 16);
+}
+
+.bdh--section-heading {
+    border-bottom: 1px solid #191919;
+    padding-bottom: .5em;
+    letter-spacing: .08em;
+}
+
+.bdh--case-meta {
+    font-size: .9em;
+    color: rgb(112, 112, 112);
+    margin-top: -.5em;
+}
+
+.bdh--case-copy p {
+    max-width: 65ch;
+}
+
+.big-poster-tall {
+    height: 28rem;
+}
+
+.bdh--studio-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1em;
+    margin-bottom: .75em;
+}
+
+.bdh--studio-strip img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.bdh--contact {
+    text-align: center;
+    padding: 1em 0 2em;
+}
+
+.bdh--contact .bdh--section-heading {
+    border-bottom: none;
+}
+
+.bdh--contact p {
+    max-width: 48ch;
+    margin: 0 auto;
+}
+
+.bdh--contact-email {
+    display: inline-block;
+    font-size: 1.4em;
+    margin-top: .5em;
 }
